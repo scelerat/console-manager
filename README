@@ -7,8 +7,8 @@ Example :
   var cm = ConsoleManager(),
       enabled = [ 'photos', 'comments', 'blogs' ],
       disabled = [ 'music', 'movies' ];
-  for (var i = 0; i < enabled_zones.length; i++ ) { cm.enable( enabled[i] )};
-  for (var i = 0; i < disabled_zones.length; i++ ) { cm.enable( disabled[i] )};
+  for (var i = 0; i < enabled.length; i++ ) { cm.enable( enabled[i] )};
+  for (var i = 0; i < disabled.length; i++ ) { cm.enable( disabled[i] )};
 })();
 
 (function(){
