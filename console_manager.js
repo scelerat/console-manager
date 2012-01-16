@@ -2,6 +2,7 @@
  * Module /  function to manage console output in a browser-based JS app
  * 
  * Example : 
+ * 
  * (function(){
  *   // a config step in your app
  *   var cm = ConsoleManager(),
@@ -18,11 +19,12 @@
  * })();
  * 
  * (function(){
- *   // A module definition in your app
+ *   // Another module definition in your app
  *   var console = ConsoleManager().console('movies');
  *   console.log("You should NOT see this in console output");
  * })();
  *
+ * davidkurtz@me.com
  */
 (function(){
 var original_console = console,
