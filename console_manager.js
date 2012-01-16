@@ -31,6 +31,7 @@ var original_console = console,
     null_console = {},
     consoles = {},
     singleton = null,
+    noop = function(){},
     funcnames = [ 'debug', 'error', 'info',  'log',
                   'warn', 'dir', 'dirxml', 'trace',
                   'assert', 'count', 'markTimeline', 'profile',
@@ -38,7 +39,7 @@ var original_console = console,
                   'group', 'groupCollapsed', 'groupEnd'];
 // Init all the function calls to noops
 for (var i = 0; i < funcnames.length; i++ ) { 
-  null_console[ funcnames[ i ] ] = function(){};
+  null_console[ funcnames[ i ] ] = noop;
 }
 ConsoleManager = function () {
   if (singleton) { return singleton; }
